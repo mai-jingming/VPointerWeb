@@ -2,7 +2,7 @@
 一个基于电脑摄像头手部关键点识别的虚拟鼠标，已做成exe文件，windows系统可直接使用，不用自己配置环境，也不需要GPU  
 下载地址为：百度盘：https://pan.baidu.com/s/1nQONI1mIq39Bnff78ML4QA  提取码：yrmy 
 
-双击dist/AiVirtualMouseProject/AiVirtualMouseProject.exe即可运行程序。  
+双击dist/AiVirtualMouseProject/AiVirtualMouseProject.exe即可运行程序（路径要全英文或数字）。  
 对着弹出的显示框按一下q（小写）可退出程序。  
 
 参考：  
