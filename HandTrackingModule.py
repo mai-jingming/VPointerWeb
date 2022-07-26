@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# modified from https://www.computervision.zone/courses/ai-virtual-mouse/
 import cv2
 import mediapipe as mp
 import time
