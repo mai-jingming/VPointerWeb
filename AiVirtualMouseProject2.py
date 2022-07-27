@@ -71,7 +71,6 @@ while cap.isOpened():
             pyautogui.scroll(-10)
             continue
 
-        # 设定鼠标移动模式：当只有食指伸出时，进入鼠标移动模式
         p0_x, p0_y = lmList[0][1:]  # 腕部坐标
         p9_x, p9_y = lmList[9][1:]  # 中指根部坐标
         p8_x, p8_y = lmList[8][1:]  # 食指指尖位置
