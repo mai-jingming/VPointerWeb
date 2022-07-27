@@ -96,33 +96,33 @@ class handDetector():
         return length, img, [x1, y1, x2, y2, cx, cy]
  
  
-def main():
-    pTime = 0
-    cap = cv2.VideoCapture(0)
-    detector = handDetector()
-    while cap.isOpened():
-        success, img = cap.read()
-        if not success:
-            print("No Frame!!")
-            continue
-        img.flags.writeable = False
-        img = detector.findHands(img)
-        lmList, bbox = detector.findPosition(img)
-        if len(lmList) != 0:
-            print(lmList[4])
+# def main():
+#     pTime = 0
+#     cap = cv2.VideoCapture(0)
+#     detector = handDetector()
+#     while cap.isOpened():
+#         success, img = cap.read()
+#         if not success:
+#             print("No Frame!!")
+#             continue
+#         img.flags.writeable = False
+#         img = detector.findHands(img)
+#         lmList, bbox = detector.findPosition(img)
+#         if len(lmList) != 0:
+#             print(lmList[4])
  
-        cTime = time.time()
-        fps = 1 / (cTime - pTime)
-        pTime = cTime
+#         cTime = time.time()
+#         fps = 1 / (cTime - pTime)
+#         pTime = cTime
 
-        img = cv2.flip(img, 1)
-        cv2.putText(img, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_PLAIN, 3,
-                    (255, 0, 255), 3)
+#         img = cv2.flip(img, 1)
+#         cv2.putText(img, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_PLAIN, 3,
+#                     (255, 0, 255), 3)
 
-        cv2.imshow("Image", img)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-    cap.release()
+#         cv2.imshow("Image", img)
+#         if cv2.waitKey(1) & 0xFF == ord('q'):
+#             break
+#     cap.release()
  
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
