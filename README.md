@@ -1,4 +1,4 @@
-# AiVirtualMouse
+# VPointerWeb
 一个基于电脑摄像头手部关键点识别的虚拟鼠标，已做成exe文件，windows系统可直接使用，不用自己配置环境，也不需要GPU  
 所有exe文件下载地址为：百度盘：https://pan.baidu.com/s/1nQONI1mIq39Bnff78ML4QA  提取码：yrmy 
 
